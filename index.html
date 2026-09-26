@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Westside Electrical Perth | Electrical Services Perth WA</title>
+
+    <meta name="description"
+        content="Westside Electrical Perth provides professional electrical services across Perth, WA. Contact us for your electrical requirements.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #17202a;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #101820;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            font-size: 21px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #f5b400;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #f5b400;
+        }
+
+        .nav-button {
+            background: #f5b400;
+            color: #101820 !important;
+            padding: 11px 18px;
+            border-radius: 6px;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 680px;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(8, 14, 20, 0.82),
+                    rgba(8, 14, 20, 0.88)
+                ),
+                url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            padding: 80px 24px;
+            color: white;
+        }
+
+        .eyebrow {
+            color: #f5b400;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            max-width: 850px;
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.02;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 19px;
+            color: #d5dde3;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 800;
+            transition: 0.2s;
+        }
+
+        .primary {
+            background: #f5b400;
+            color: #101820;
+        }
+
+        .primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .secondary {
+            border: 1px solid rgba(255,255,255,0.55);
+            color: white;
+        }
+
+        .secondary:hover {
+            background: white;
+            color: #101820;
+        }
+
+        /* GENERAL */
+
+        section {
+            padding: 90px 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin-bottom: 45px;
+        }
+
+        .section-heading span {
+            color: #c18d00;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.1;
+            margin: 10px 0 15px;
+        }
+
+        .section-heading p {
+            color: #64727e;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background: #f5f7f9;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 32px;
+            border: 1px solid #e4e8ec;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff5d6;
+            color: #c18d00;
+            border-radius: 8px;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .service-card p {
+            color: #687682;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            min-height: 480px;
+            border-radius: 12px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.12),
+                    rgba(0,0,0,0.12)
+                ),
+                url("https://images.unsplash.com/photo-1555963966-b7ae5406b6c6?auto=format&fit=crop&w=1000&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .about-text h2 {
+            font-size: 46px;
+            line-height: 1.1;
+            margin: 12px 0 20px;
+        }
+
+        .about-text p {
+            color: #64727e;
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .check-list li {
+            margin: 13px 0;
+            font-weight: 700;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: #c18d00;
+            margin-right: 10px;
+        }
+
+        /* PROCESS */
+
+        .process {
+            background: #101820;
+            color: white;
+        }
+
+        .process .section-heading p {
+            color: #aebbc7;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            border-top: 2px solid #f5b400;
+            padding-top: 22px;
+        }
+
+        .process-number {
+            color: #f5b400;
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .process-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #aebbc7;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #fff5d6;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: clamp(34px, 5vw, 52px);
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #60707e;
+        }
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 60px;
+        }
+
+        .contact-info h2 {
+            font-size: 42px;
+            margin: 10px 0 20px;
+        }
+
+        .contact-info p {
+            color: #64727e;
+            margin-bottom: 25px;
+        }
+
+        .contact-detail {
+            margin: 18px 0;
+        }
+
+        .contact-detail strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        form {
+            background: #f5f7f9;
+            padding: 32px;
+            border-radius: 10px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #d9e0e6;
+            border-radius: 5px;
+            font: inherit;
+            margin-bottom: 15px;
+            background: white;
+        }
+
+        textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #080f15;
+            color: #9baab7;
+            padding: 35px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo {
+            color: white;
+            font-weight: 800;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .service-grid,
+            .process-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                min-height: 350px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 600px;
+            }
+
+            .hero h1 {
+                font-size: 46px;
+            }
+
+            section {
+                padding: 65px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+    <nav class="nav">
+
+        <a href="#" class="logo">
+            WESTSIDE <span>ELECTRICAL</span>
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#process">Process</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-button">
+                    Get a Quote
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            ELECTRICAL SERVICES ACROSS PERTH, WA
+        </div>
+
+        <h1>
+            Professional Electrical.<br>
+            Done Right.
+        </h1>
+
+        <p>
+            Reliable electrical services for homes and businesses
+            across Perth. Get in touch to discuss your electrical
+            requirements.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#contact" class="button primary">
+                Request a Quote
+            </a>
+
+            <a href="tel:0400000000" class="button secondary">
+                Call Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>OUR SERVICES</span>
+
+            <h2>
+                Electrical solutions for Perth properties.
+            </h2>
+
+            <p>
+                A range of electrical services for residential and
+                commercial properties.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">⚡</div>
+
+                <h3>General Electrical</h3>
+
+                <p>
+                    Electrical services for general installation,
+                    maintenance and repair requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">⌂</div>
+
+                <h3>Residential Electrical</h3>
+
+                <p>
+                    Electrical solutions for homes, renovations and
+                    residential projects.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">▣</div>
+
+                <h3>Commercial Electrical</h3>
+
+                <p>
+                    Electrical services for commercial properties
+                    and business requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">◉</div>
+
+                <h3>Lighting</h3>
+
+                <p>
+                    Lighting installation and electrical solutions
+                    for indoor and outdoor spaces.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">⚙</div>
+
+                <h3>Electrical Repairs</h3>
+
+                <p>
+                    Assistance with electrical faults, repairs and
+                    maintenance requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">✓</div>
+
+                <h3>Electrical Upgrades</h3>
+
+                <p>
+                    Upgrade existing electrical systems to suit
+                    changing property requirements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image"></div>
+
+            <div class="about-text">
+
+                <span class="eyebrow">
+                    WESTSIDE ELECTRICAL PERTH
+                </span>
+
+                <h2>
+                    Electrical work you can rely on.
+                </h2>
+
+                <p>
+                    Westside Electrical Perth provides electrical
+                    services for properties across the Perth area.
+                </p>
+
+                <p>
+                    Whether you need general electrical work,
+                    maintenance, repairs or a new installation,
+                    get in touch to discuss your requirements.
+                </p>
+
+                <ul class="check-list">
+
+                    <li>Residential electrical services</li>
+
+                    <li>Commercial electrical services</li>
+
+                    <li>Electrical repairs and maintenance</li>
+
+                    <li>Lighting and electrical installations</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process" id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>
+                A simple process from enquiry to completion.
+            </h2>
+
+            <p>
+                Tell us what you need and we'll discuss the work
+                required for your property.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="process-number">01</div>
+
+                <h3>Get in Touch</h3>
+
+                <p>
+                    Contact us and tell us about your electrical
+                    requirements.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">02</div>
+
+                <h3>Discuss</h3>
+
+                <p>
+                    We discuss the job and determine what work
+                    is required.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">03</div>
+
+                <h3>Quote</h3>
+
+                <p>
+                    Receive a quote based on the requirements
+                    of your project.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">04</div>
+
+                <h3>Complete</h3>
+
+                <p>
+                    Once approved, the agreed electrical work
+                    can be completed.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Need an electrician in Perth?
+        </h2>
+
+        <p>
+            Get in touch with Westside Electrical Perth to discuss
+            your electrical requirements.
+        </p>
+
+        <a href="#contact" class="button primary">
+            Request a Quote
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <span class="eyebrow">
+                    CONTACT US
+                </span>
+
+                <h2>
+                    Let's talk about your electrical project.
+                </h2>
+
+                <p>
+                    Fill out the form and we'll get back to you
+                    regarding your electrical requirements.
+                </p>
+
+                <div class="contact-detail">
+
+                    <strong>Phone</strong>
+
+                    <span>
+                        0400 000 000
+                    </span>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <strong>Email</strong>
+
+                    <span>
+                        info@example.com
+                    </span>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <strong>Service Area</strong>
+
+                    <span>
+                        Perth, Western Australia
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <form action="#" method="POST">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone number"
+                        required
+                    >
+
+                </div>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email address"
+                    required
+                >
+
+                <select name="service">
+
+                    <option value="">
+                        What do you need help with?
+                    </option>
+
+                    <option>
+                        General Electrical
+                    </option>
+
+                    <option>
+                        Residential Electrical
+                    </option>
+
+                    <option>
+                        Commercial Electrical
+                    </option>
+
+                    <option>
+                        Lighting
+                    </option>
+
+                    <option>
+                        Electrical Repairs
+                    </option>
+
+                    <option>
+                        Electrical Upgrades
+                    </option>
+
+                    <option>
+                        Other
+                    </option>
+
+                </select>
+
+                <textarea
+                    name="message"
+                    placeholder="Tell us about your electrical requirements..."
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="button primary"
+                >
+                    Request a Quote
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+
+            <div class="footer-logo">
+                WESTSIDE ELECTRICAL PERTH
+            </div>
+
+            <div>
+                Electrical services across Perth, WA.
+            </div>
+
+        </div>
+
+        <div>
+            © 2026 Westside Electrical Perth. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
